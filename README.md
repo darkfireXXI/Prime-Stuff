@@ -18,3 +18,7 @@ Note that there are three primary usages of Factorization.py (which in hindsight
 ![eqn](http://latex.codecogs.com/gif.latex?int%28%5Cfrac%7Bx%5E2%7D%7B24%7D%29%20%3D%20%5Cfrac%7Bx%5E2%7D%7B24%7D)  
 However this rudimentary check also catches many composite numbers. Assuming we know a couple prime numbers to start (eg. 2, 3, 5) we can then check only previously found numbers thus reducing the number of verification calculations compared to brute force. Additionally a well known trick is to only check numbers up to the square root of the number we are testing for primality. Eg. we want to find that x is prime and if nothing factors out up to sqrt(x) we don't need to check past that. This is because if x did factor to a and b with a<b checking past sqrt(x) means we will only find b, which implies we should have already found a.  
 This seems rather elementary, but normally when writing code, out of habit one might write a loop to check from 2 to x, which is much slower than checking 2 to sqrt(x). Overall this method still requires 2 separate checks and while it is 10-100x faster than a traditional brute force method, it is still 10-100x slower than a prime number seive depending on the magnitude of the x value we would like to find tumber up to.
+
+## Limitations
+The file only holds accuracy up to 19 digit numbers. Higher numbers will result in a RuntimeWarning: overflow encountered in long_scalars.
+
