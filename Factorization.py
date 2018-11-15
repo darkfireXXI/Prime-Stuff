@@ -103,7 +103,7 @@ def sortNewPrime(digitsX, primeNumber):
 	return digitsX, NOT
 
 def recordPrimes(primeNumber):
-	with  open('/Users/XXI/Desktop/0/Stuff/Prime Stuff/Higher_Digit_Primes.txt', 'r', encoding = 'utf16') as primesRecorded:
+	with  open('/path/Higher_Digit_Primes.txt', 'r', encoding = 'utf16') as primesRecorded:
 		lowDigits, highDigits = 16, 19 +1
 		XdigitPrime = [[], [], [], []]
 
@@ -123,7 +123,7 @@ def recordPrimes(primeNumber):
 			if(len(str(primeNumber)) == i):
 				XdigitPrime[i - lowDigits], NOT = sortNewPrime(XdigitPrime[i - lowDigits], primeNumber)
 
-	with open('/Users/XXI/Desktop/0/Stuff/Prime Stuff/Higher_Digit_Primes.txt', 'w', encoding = 'utf16') as newRecorded:
+	with open('/path/Higher_Digit_Primes.txt', 'w', encoding = 'utf16') as newRecorded:
 		for i in range(lowDigits, highDigits):
 			newRecorded.write('{} digits\n'.format(i))
 			for j in range(0, len(XdigitPrime[i - lowDigits])):
@@ -143,10 +143,10 @@ if(number >= maxNumber):
 
 start_time = time.time()
 
-factors = primeFactors(number)
-# all_factors = allFactors(number)
+factors = primeFactors(number) # Unhash to find only prime factors
+# all_factors = allFactors(number) # Unhash to find all factors
 
-# for i in range(19, 16 - 1, -1):
+# for i in range(19, 16 - 1, -1): # Unhash to find and record 1 each of a 16-19 digit primes and record the values in a txt
 # 	prime = findXdigitPrime(i)
 # 	recordPrimes(prime)
 
