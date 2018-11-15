@@ -135,7 +135,7 @@ def recordPrimes(primeNumber):
 
 
 number = 936291500716862867123
-# number = randomXdigitGenerator(18)
+# number = randomXdigitGenerator(18) # Unhash to auto generate an X digit number to test for primality with X as input
 print('{} - {} digits - {:,}'.format(number, len(str(number)), number))
 
 if(number >= maxNumber):
