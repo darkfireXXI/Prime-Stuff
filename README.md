@@ -4,6 +4,12 @@ Generating prime numbers, factoring, and recording them.
 ## Motication
 I want to make my own encrypion function. Since prime numbers are the basis of most modern encryption first I'll need to generate a few and save them for later usage.
 
+## Usage
+Note that there are three primary usages of Factorization.py (which in hindsight is not aptly named). Between lines 144 and 153 different functions can be hashed/unhashed which allow the user to  
+1. Find the prime factors of a number or hopefully find that it is prime. Line 138 can be unhashed to auto generate an X digit number to test taking X as input or the user can input the number manually on line 137.  
+2. Find all prime factors of a number  
+3. Find and record one each of a 16, 17, 18, 19 digit prime number found at random. A starter .txt file is given as well that is meant to be used in conjuction. Have fun finding your own!
+
 ## Notes Learned Along the Way
 * When factoring primes you need to test i=2 and then from 3 onwards can increment by 2 because testing i=2 already checks all even numbers
 * a//b seems to be a bit faster than a/b when doing calculations and in most cases here they can be used interchngeably
