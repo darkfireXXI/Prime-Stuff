@@ -6,7 +6,7 @@ I want to make my own encrypion function. Since prime numbers are the basis of m
 
 ## Usage
 Note that there are three primary usages of Factorization.py (which in hindsight is not aptly named). Between lines 144 and 153 different functions can be hashed/unhashed which allow the user to  
-1. Find the prime factors of a number or hopefully find that it is prime. Line 138 can be unhashed to auto generate an X digit number to test taking X as input or the user can input the number manually on line 137.  
+1. Find the prime factors of a number (and their associated exponents) or hopefully find that it is prime. Line 138 can be unhashed to auto generate an X digit number to test taking X as input or the user can input the number manually on line 137.  
 2. Find all prime factors of a number  
 3. Find and record one each of a 16, 17, 18, 19 digit prime number found at random. A starter .txt file is given as well that is meant to be used in conjuction. Have fun finding your own!
 
