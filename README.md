@@ -2,7 +2,7 @@
 Generating prime numbers, factoring, and recording them.
 
 ## Motication
-I want to make my own encrypion function. Since prime numbers are the basis of most modern encryption first I'll need to generate a few and save them for later usage.
+I want to make my own encryption function. Since prime numbers are the basis of most modern encryption first I'll need to generate a few and save them for later usage.
 
 ## Usage
 Note that there are three primary usages of Factorization.py (which in hindsight is not aptly named). Between lines 144 and 153 different functions can be hashed/unhashed which allow the user to  
