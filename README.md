@@ -1,7 +1,7 @@
 # Prime Stuff
 Generating prime numbers, factoring, and recording them.
 
-## Motication
+## Motivation
 I want to make my own encryption function. Since prime numbers are the basis of most modern encryption first I'll need to generate a few and save them for later usage.
 
 ## Usage
